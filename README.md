@@ -2,15 +2,16 @@
 
 
 
-🛒 Laravel E-Commerce System (Vendor + Customer Panel)
+  🛒 Laravel E-Commerce System (Vendor + Customer Panel)
 
 MY FIRST EVER LARAVEL PROJECT
-🚀 Project Overview
+
+🚀 PROJECT OVERVIEW
 Ye ek Basic E-Commerce System hai jo vendors aur customers ke liye banaya gaya hai. Vendors products add/edit kar sakte hain, aur customers shopping cart & checkout ka use kar sakte hain.
 
 
 
-🎯 Project Goals
+  🎯 PROJECT GOALS
 
 ✅ Authentication: Auth Class (Vendors, Customers, Admin)
 ✅ Middleware (Role-based access control)
@@ -20,18 +21,17 @@ Ye ek Basic E-Commerce System hai jo vendors aur customers ke liye banaya gaya h
 
 
 
-🛠️ Features & Technologies Used
+  🛠️ FEATURES & TECHNOLOGIES USED
 
 Authentication → Auth Class 
-
 Middleware → Role-based access control
-
 Eloquent Relationships → One-to-Many & Many-to-Many relationships
-
 CRUD Operations → Products, Orders, Categories
-
 File Uploads → Product Images Storage
+
 
 Session Management → Shopping Cart
 
+
 Admin Panel → Vendor approvals, order management
+
