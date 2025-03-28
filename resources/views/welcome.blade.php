@@ -13,6 +13,9 @@
 <body>
     @include('partials.navbar')
     @include('partials.hero')
+      <main class="auth-wrapper">
+        @yield('content')
+    </main>
     @include('partials.footer')
 
 </body>

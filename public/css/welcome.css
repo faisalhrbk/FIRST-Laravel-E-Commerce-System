@@ -80,3 +80,83 @@
             }
         }
  
+        /* 🔹 General Auth Wrapper Styling */
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+    background: #0a0a0a;
+}
+
+/* 🔹 Auth Container (Form Box) */
+.auth-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* 🔹 Auth Headings */
+.auth-container h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+/* 🔹 Input Fields */
+.auth-container input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.6rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #333;
+    color: white;
+}
+
+/* 🔹 Form Buttons */
+.auth-container button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #b20710;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.auth-container button:hover {
+    background: #e50914;
+}
+
+/* 🔹 Links inside Auth Pages */
+.auth-container p {
+    margin-top: 1rem;
+}
+.auth-container a {
+    color: #e50914;
+    text-decoration: none;
+    font-weight: bold;
+}
+.auth-container a:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 Responsive Form */
+@media (max-width: 768px) {
+    .auth-wrapper {
+        padding: 1rem;
+    }
+    .auth-container {
+        padding: 1.5rem;
+        width: 90%;
+    }
+}
+
