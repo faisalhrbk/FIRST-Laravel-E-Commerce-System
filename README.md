@@ -2,7 +2,6 @@
 
 # 🛒 Laravel E-Commerce System (Vendor + Customer Panel)
 
-## Laravel Logo
 
 ## MY FIRST EVER LARAVEL PROJECT
 
