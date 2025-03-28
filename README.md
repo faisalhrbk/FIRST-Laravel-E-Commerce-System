@@ -7,7 +7,7 @@
 
 ### 🚀 PROJECT OVERVIEW
 Ye ek **Basic E-Commerce System** hai jo **vendors aur customers** ke liye banaya gaya hai.  
-Vendors **products add/edit** kar sakte hain, aur customers **shopping cart & checkout** ka use kar sakte hain.  
+Vendors **products add/edit login/logout** kar sakte hain, aur customers **logout cart & login** **shopping cart & checkout** ka use kar sakte hain.  
 
 ### 🎯 PROJECT GOALS
 - Authentication: **Auth Class** (Vendors, Customers, Admin)  
