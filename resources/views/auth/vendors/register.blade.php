@@ -1,7 +1,5 @@
 @extends('welcome')
 @section('content')
-
-  
 <div class="auth-container">
     <h2>Vendor Register</h2>
     <form action="{{ route('vendor.register') }}" method="POST">

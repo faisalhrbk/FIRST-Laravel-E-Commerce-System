@@ -1,5 +1,4 @@
 
-      
 
     <footer class="footer">
         <p>Contact Info: <a href="#">GitHub</a></p>
