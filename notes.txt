@@ -1,0 +1,7 @@
+things i did
+
+i created the homepage
+
+edited the welcome page and made the welcome page for my website this is just a starting 
+
+after that i made models and migratiosn
