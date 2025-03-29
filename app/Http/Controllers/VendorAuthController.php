@@ -24,7 +24,7 @@ class VendorAuthController extends Controller
         if (!Auth::guard('admin')->attempt($credentials)) {
             return back()->withErrors(['login' => 'Ghalat email ya password!']);
         }
-        return view('auth.vendor.login');
+        return view('auth.vendor.register');
     }
     function register()
     {
