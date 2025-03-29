@@ -12,3 +12,6 @@ sperated the logic usin  yield extend and section
 today afternoon 29march i learned new topic laravel guard and multi-auth 
 so ill setup it toady and fix routes
 
+so its 6pm rn and i fixed blade files and paths 
+
+now i will make factories and try to login and use the laravel guard multi auth
