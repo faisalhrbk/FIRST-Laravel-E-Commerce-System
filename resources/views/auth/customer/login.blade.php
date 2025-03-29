@@ -11,4 +11,3 @@
     <p>New here? <a href="{{ route('customer.register') }}">Sign Up</a></p>
 </div>
 @endsection
-<h1>bro</h1>

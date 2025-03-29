@@ -18,4 +18,7 @@ class CustomerAuthController extends Controller
     function register(){
         return view('auth.customer.register');
     }
+    function registerPost(){
+        return ' return register post';
+    }
 }
