@@ -15,20 +15,22 @@ Route::prefix('customer')->controller(CustomerAuthController::class)->group(func
     Route::get('login', 'login')->name('customer.login');
     Route::post('login', 'loginPost')->name('customer.login.post');
     Route::get('register', 'register')->name('customer.register');
+    Route::post('register', 'registerPost')->name('customer.register.post');
 });
-Route::resource('customer', CustomerController::class)->middleware('auth');
+Route::resource('customer', CustomerController::class);
 
 // VENDOR ROUTES
 Route::prefix('vendor')->controller(VendorAuthController::class)->group(function () {
     Route::get('login', 'login')->name('vendor.login');
     Route::post('login', 'loginPost')->name('vendor.login.post');
     Route::get('register', 'register')->name('vendor.register');
+    Route::post('register', 'registerPost')->name('vendor.register.post');
 });
-Route::resource('vendor', VendorController::class)->middleware('auth');
+Route::resource('vendor', VendorController::class);
 
 // ADMIN ROUTES
 Route::prefix('admin')->controller(AdminAuthController::class)->group(function () {
     Route::get('login', 'login')->name('admin.login');
     Route::post('login', 'loginPost')->name('admin.login.post');
 });
-Route::resource('admin', AdminController::class)->middleware('auth');
+Route::resource('admin', AdminController::class);
