@@ -6,3 +6,9 @@ edited the welcome page and made the welcome page for my website this is just a 
 
 after that i made models and migratiosn
 sperated the logic usin  yield extend and section 
+
+
+
+today afternoon 29march i learned new topic laravel guard and multi-auth 
+so ill setup it toady and fix routes
+
