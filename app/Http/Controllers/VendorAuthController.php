@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Vendor;
 use Illuminate\Http\Request;
 
 class VendorAuthController extends Controller
@@ -12,17 +13,33 @@ class VendorAuthController extends Controller
 
         return view('auth.vendor.login');
     }
-    function loginPost()
+    function loginPost(Request $request)
     {
-        return 'ok';
+        $credentials = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|min:2',
+        ]);
+
+        if (!Vendor::guard('vendor')->attempt($credentials)) {
+            return back()->withErrors(['login' => 'Ghalat email ya password!']);
+        }
         return view('auth.vendor.login');
     }
     function register()
     {
         return view('auth.vendor.register');
     }
-    function registerPost()
+    function registerPost(Request $request)
     {
-        return ' return register post';
+        $credentials = $request->validate([
+            'name' => 'required|string',
+            'email' => 'required|email',
+            'password' => 'required|min:2'
+        ]);
+        $credentials['password'] = bcrypt($credentials['password']);
+        $bro =   Vendor::create($credentials);
+
+
+        return 'vendor register success' . $bro;
     }
 }
