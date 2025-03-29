@@ -12,13 +12,13 @@
 <body>
     <div class="auth-container">
         <h2>Admin Login</h2>
-        <form action="{{ route('customer.login.post') }}" method="POST">
+        <form action="{{ route('admin.login.post') }}" method="POST">
             @csrf
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
             <button type="submit">Login</button>
         </form>
-        {{-- <p>New here? <a href="{{ route('customer.register') }}">Sign Up</a></p> --}}
+        {{-- <p>New here? <a href="{{ route('admin.register') }}">Sign Up</a></p> --}}
         <a href="/">Go back Home</a>
     </div>
 </body>

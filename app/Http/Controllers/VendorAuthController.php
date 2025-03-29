@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Vendor;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class VendorAuthController extends Controller
 {
@@ -20,7 +21,7 @@ class VendorAuthController extends Controller
             'password' => 'required|min:2',
         ]);
 
-        if (!Vendor::guard('vendor')->attempt($credentials)) {
+        if (!Auth::guard('admin')->attempt($credentials)) {
             return back()->withErrors(['login' => 'Ghalat email ya password!']);
         }
         return view('auth.vendor.login');
