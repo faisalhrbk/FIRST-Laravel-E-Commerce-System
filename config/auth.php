@@ -80,11 +80,11 @@ return [
         ],
         'customers' => [
             'driver' => 'eloquent',
-            'model' =>  App\Models\Vendor::class
+            'model' =>  App\Models\Customer::class
         ],
         'vendors' => [
             'driver' => 'eloquent',
-            'model' =>  App\Models\Customer::class
+            'model' =>  App\Models\Vendor::class
         ],
         'admins' => [
             'driver' => 'eloquent',
