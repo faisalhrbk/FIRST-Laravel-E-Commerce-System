@@ -5,7 +5,7 @@
         <button class="nav-toggle" onclick="toggleMenu()">☰</button>
         <ul class="nav-menu">
              <li><a href="{{route('admin.login')}}">Admin Login</a></li>
-            <li><a href="#">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">Categories</a></li>
             <li><a href="#">Cart</a></li>
