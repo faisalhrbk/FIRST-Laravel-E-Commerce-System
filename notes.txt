@@ -17,3 +17,5 @@ so its 6pm rn and i fixed blade files and paths
 now i will make factories and try to login and use the laravel guard multi auth
 
 alhamdulllaih multi auth work cant belive
+
+after eid ill work in tis project
