@@ -1,13 +1,15 @@
 <?php
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CustomerAuthController;
-use App\Http\Controllers\CustomerController;
-use App\Http\Controllers\VendorAuthController;
-use App\Http\Controllers\VendorController;
-use App\Http\Controllers\AdminAuthController;
-use App\Http\Controllers\AdminController;
 
-Route::get('/', function(){
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\VendorController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\AdminAuthController;
+use App\Http\Controllers\VendorAuthController;
+use App\Http\Controllers\CustomerAuthController;
+
+Route::get('/', function () {
     return view('welcome');
 });
 // Customer Auth controller
@@ -34,3 +36,10 @@ Route::prefix('admin')->controller(AdminAuthController::class)->group(function (
     Route::post('login', 'loginPost')->name('admin.login.post');
 });
 Route::resource('admin', AdminController::class);
+
+Route::prefix('{role}')->controller(AuthController::class)->group(function () {
+    Route::get('login', 'login')->name('login');
+    Route::post('login', 'loginPost')->name('login.post');
+    Route::get('register', 'register')->name('register');
+    Route::post('register', 'registerPost')->name('register.post');
+});
