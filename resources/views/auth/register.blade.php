@@ -1,8 +1,9 @@
 @extends('welcome')
 @section('register')
+    <h1>hello world</h1>
     <div class="auth-container">
         <h2>Vendor Register</h2>
-        <form action="{{ route('register.post' . ['role' => $role]) }}" method="POST">
+        <form action="{{ route('register.post', ['role' => $role]) }}" method="POST">
             @csrf
             <input type="text" name="name" placeholder="Full Name" required>
             <input type="email" name="email" placeholder="Email" required>
