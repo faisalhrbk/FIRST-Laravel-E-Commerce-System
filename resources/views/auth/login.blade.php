@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('layout.app')
 
 @section('login')
 <div class="loginForm">

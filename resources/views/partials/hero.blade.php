@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('layout.app')
 @section('hero')
     <div class="hero">
         <h1>Start Your Journey</h1>
@@ -8,12 +8,15 @@
             <a href="{{ route('login', ['role' => 'customer']) }}">Start as Customer</a>
 
         </div>
+           @include('partials.products')
+        
     </div>
+ 
 @endsection
 
 <style>
     .hero {
-        height: 25vh;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;

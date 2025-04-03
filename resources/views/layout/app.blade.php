@@ -4,21 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to E-Commerce</title>
+    <title>@yield('title', 'E-Commerce')</title>
     <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
     <script src="{{ asset('js/script.js') }}"></script>
-
 </head>
 
 <body>
-    @include('partials.navbar')
-    @yield('hero')
+    @include('partials.navbar') <!-- Navbar -->
 
-    @yield('login')
-    @yield('register')
+    <!-- Main content  -->
+    <main>
+        @yield('hero') 
+         @yield('login') 
+          @yield('register') 
 
-    @include('partials.footer')
+    </main>
 
+    @include('partials.footer') <!-- Footer -->
 </body>
 
 </html>

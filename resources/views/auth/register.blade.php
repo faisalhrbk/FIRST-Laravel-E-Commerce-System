@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('layout.app')
 @section('register')
     <div class="registerForm">
         <div class="auth-container">
