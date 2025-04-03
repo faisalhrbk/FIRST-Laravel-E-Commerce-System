@@ -12,10 +12,12 @@
 
 <body>
     @include('partials.navbar')
-    @include('partials.hero')
-    
-        @yield('content')
-    
+    @yield('hero')
+
+    @yield('login')
+     @yield('register')
+
+
     @include('partials.footer')
 
 </body>
