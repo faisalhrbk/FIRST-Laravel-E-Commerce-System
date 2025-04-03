@@ -19,3 +19,7 @@ now i will make factories and try to login and use the laravel guard multi auth
 alhamdulllaih multi auth work cant belive
 
 after eid ill work in tis project
+Key Takeaway:
+Use double quotes (") when you want to interpolate variables inside strings in PHP.
+
+Use single quotes (') when you just need a literal string.

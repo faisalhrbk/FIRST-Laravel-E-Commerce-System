@@ -7,24 +7,39 @@ use PDO;
 
 class AuthController extends Controller
 {
-    function login($role)
+    function login(Request $request, $role)
     {
         return view('auth.login', compact('role'));
     }
-    function loginPost(Request $request)
+    function loginPost(Request $request, $role)
     {
-       
-        return $request;
+        $cred = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|min:4'
+        ]);
+        if (!$cred) {
+            return redirect()->back();
+        } else {
+            return view("{$role}.dashboard");
+        }
+        return view('auth.login', compact('role'));
     }
     function register($role)
     {
         return view('auth.register', compact('role'));
     }
 
-    function registerPost(Request $request)
+    function registerPost(Request $request, $role)
     {
-        return $request;
+        $cred = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|min:4'
+        ]);
+        if (!$cred) {
+            return redirect()->back();
+        } else {
+            return view("{$role}.dashboard");
+        }
+        return view('auth.login', compact('role'));
     }
 }
-
-//can i commit
