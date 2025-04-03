@@ -15,8 +15,7 @@
     @yield('hero')
 
     @yield('login')
-     @yield('register')
-
+    @yield('register')
 
     @include('partials.footer')
 

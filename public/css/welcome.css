@@ -3,6 +3,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
             background-color: #0a0a0a;
             color: white;
         }
@@ -11,7 +12,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 1rem;
-            background-color: #3e0044;
+            background-color: #f1022a;
         }
         .nav-menu {
             list-style: none;
@@ -80,15 +81,12 @@
             }
         }
  
-        /* 🔹 General Auth Wrapper Styling */
-.auth-wrapper {
+.loginForm, .registerForm{
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    padding: 2rem;
-    background: #0a0a0a;
+    width: 100%;
 }
+
 
 /* 🔹 Auth Container (Form Box) */
 .auth-container {
@@ -151,9 +149,6 @@
 
 /* 🔹 Responsive Form */
 @media (max-width: 768px) {
-    .auth-wrapper {
-        padding: 1rem;
-    }
     .auth-container {
         padding: 1.5rem;
         width: 90%;

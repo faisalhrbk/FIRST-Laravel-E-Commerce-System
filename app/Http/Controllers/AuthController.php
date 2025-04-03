@@ -13,6 +13,7 @@ class AuthController extends Controller
     }
     function loginPost(Request $request)
     {
+       
         return $request;
     }
     function register($role)
