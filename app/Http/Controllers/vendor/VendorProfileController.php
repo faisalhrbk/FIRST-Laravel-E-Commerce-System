@@ -12,7 +12,7 @@ class VendorProfileController extends Controller
      */
     public function index()
     {
-        
+        return view('vendor.index');
     }
 
     /**
@@ -44,7 +44,7 @@ class VendorProfileController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('vendor.edit');
     }
 
     /**
