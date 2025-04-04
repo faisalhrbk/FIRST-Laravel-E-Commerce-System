@@ -19,6 +19,8 @@
         @yield('login')
         @yield('register')
         @yield('vendorDashboard')
+        @yield('vendorEdit')
+        @yield('vendorIndex')
 
     </main>
 

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\vendor\VendorProfileController;
 
 Route::get('/', function () {
     return view('partials.hero');
@@ -13,3 +14,5 @@ Route::controller(AuthController::class)->group(function () {
     Route::get('{role}/register', 'register')->name('register');
     Route::post('{role}/register', 'registerPost')->name('role.register.post');
 });
+
+Route::resource('vendor', VendorProfileController::class);

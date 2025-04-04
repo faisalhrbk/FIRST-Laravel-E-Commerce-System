@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->integer('quantity');
-            $table->string('image')->nullable();
+            $table->string('images')->nullable();
             $table->string('description');
             $table->foreignId('vendor_id')->references('id')->on('vendors');
             $table->timestamps();

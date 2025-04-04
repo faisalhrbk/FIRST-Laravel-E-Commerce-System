@@ -8,8 +8,7 @@
         <div class="dashboard-header">
 
             <h2 style="color: #fff;">Welcome, 👋</h2>
-            {{-- {{ route('vendor.profile.edit') }} --}}
-            <a href="#" class="btn-profile">
+            <a href="{{route('vendor.index')}}" class="btn-profile">
                 My Profile
             </a>
         </div>
@@ -21,23 +20,19 @@
                 @csrf
                 <div>
                     <label for="title">Product Title:</label>
-                    <input type="text" name="title" required>
+                    <input type="text" name="title" placeholder="enter product title" required>
                 </div>
                 <div>
-                    <label for="name">Product Name:</label>
-                    <input type="text" name="name" required>
+                    <label for="images">Product Images:</label>
+                    <input type="file" name="images" placeholder="images">
                 </div>
                 <div>
-                    <label for="name">Product Name:</label>
-                    <input type="text" name="name" required>
-                </div>
-                <div>
-                    <label for="price">Price:</label>
-                    <input type="number" name="price" required>
+                    <label for="price">Product Price:</label>
+                    <input type="number" name="price" placeholder="enter price" type="image" required>
                 </div>
                 <div>
                     <label for="description">Description:</label>
-                    <textarea name="description" rows="3"></textarea>
+                    <textarea name="description" placeholder="enter description" rows="3"></textarea>
                 </div>
                 <button type="submit">Add Product</button>
             </form>
@@ -46,18 +41,17 @@
         <div class="card-list">
             <h3>Your Products</h3>
             <div class="product-grid">
-                @php
-                    $products = ['asdf', 'klasd'];
-                @endphp
-                @forelse ($products as $product)
-                    {{-- <div class="card">
-                    <h4>{{ $product->name }}</h4>
-                    <p><strong>Price:</strong> ${{ $product->price }}</p>
-                    <p>{{ $product->description }}</p>
-                </div> --}}
+                {{-- @forelse ($products as $product)
+                    <div class="card">
+                        <img class="vendorImage" src="#" alt="image here">
+                        <h4>{{ $product->title }}</h4>
+                        <p><strong>Price:</strong> ${{ $product->price }}</p>
+                        <p>{{ $product->description }}</p>
+
+                    </div>
                 @empty
                     <p style="color: #aaa;">No products added yet.</p>
-                @endforelse
+                @endforelse --}}
             </div>
         </div>
 
@@ -68,7 +62,8 @@
     <style>
         .dashboard-wrapper {
             padding: 2rem;
-            max-width: 1200px;
+            width: 70vh;
+            max-width: 800px;
             margin: auto;
         }
 
@@ -96,6 +91,11 @@
             display: grid;
             gap: 1rem;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .vendorImage {
+            height: 100px;
+            width: 200px;
         }
 
         .card-list {

@@ -12,7 +12,7 @@ class VendorProfileController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
