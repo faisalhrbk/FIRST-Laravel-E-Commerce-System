@@ -7,6 +7,7 @@
     <title>@yield('title', 'E-Commerce')</title>
     <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
     <script src="{{ asset('js/script.js') }}"></script>
+    @stack('styles')
 </head>
 
 <body>

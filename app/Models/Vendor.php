@@ -23,6 +23,10 @@ class Vendor extends Authenticatable
         'password',
     ];
 
+    function products(){
+    return $this->belongsTo(Product::class);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *
