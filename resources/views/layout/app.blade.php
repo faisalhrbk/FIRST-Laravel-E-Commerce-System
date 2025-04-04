@@ -15,9 +15,10 @@
 
     <!-- Main content  -->
     <main>
-        @yield('hero') 
-         @yield('login') 
-          @yield('register') 
+        @yield('hero')
+        @yield('login')
+        @yield('register')
+        @yield('vendorDashboard')
 
     </main>
 
