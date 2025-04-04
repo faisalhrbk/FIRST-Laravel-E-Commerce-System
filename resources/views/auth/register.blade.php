@@ -2,6 +2,9 @@
 @section('register')
     <div class="registerForm">
         <div class="auth-container">
+             @if (session('error'))
+                <p style="color:rgb(253, 1, 1)">{{ session('error') }}</p>
+            @endif
             <h2>Vendor Register</h2>
             <form action="{{ route('role.register.post', ['role' => $role]) }}" method="POST">
                 @csrf

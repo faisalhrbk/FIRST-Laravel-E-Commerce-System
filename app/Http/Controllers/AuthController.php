@@ -65,7 +65,7 @@ class AuthController extends Controller
         } elseif ($role === 'admin') {
             $user = Admin::create($cred);
         } else {
-            return back()->withErrors(['role' => 'Invalid role specified.']);
+            return back()->with(['error' => 'Invalid role specified.']);
         }
         return redirect()->route('login', ['role' => $role])->with('success', 'Registration successful!');
     }
